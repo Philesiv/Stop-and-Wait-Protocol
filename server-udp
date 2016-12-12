@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]
+then
+   	echo "Usage: server-udp [port]"
+	exit 1
+fi
+if [ $# -gt 1 ]
+then
+	echo "To many arguments. Only the first will be considered"
+fi
+
+java -cp bin:s72902/bin server.Server $1
+
+exit 0

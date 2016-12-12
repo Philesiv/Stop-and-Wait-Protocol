@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ $# -lt 3 ]
+then
+   	echo "Usage: client-udp [server-adress] [port] [filename]"
+	exit 1
+fi
+if [ $# -gt 3 ]
+then
+	echo "To many arguments. Only the first 3 will be considered"
+fi
+
+java -cp bin:s72902/bin client.Client $1 $2 $3
+
+exit 0
