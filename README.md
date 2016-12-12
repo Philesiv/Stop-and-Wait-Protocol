@@ -1,2 +1,2 @@
-Philipp Wenskus
+This program using the Java UDP-Socket 
 
